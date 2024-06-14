@@ -1,6 +1,6 @@
 {
-  "name": "@editorjs/raw",
-  "version": "2.5.0",
+  "name": "@blade47/editorjs-raw",
+  "version": "2.5.1",
   "keywords": [
     "codex editor",
     "raw",
@@ -8,7 +8,7 @@
   ],
   "description": "Raw HTML Tool for Editor.js",
   "license": "MIT",
-  "repository": "https://github.com/editor-js/raw",
+  "repository": "https://github.com/blade47/raw",
   "files": [
     "dist"
   ],

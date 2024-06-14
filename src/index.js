@@ -115,6 +115,7 @@ export default class RawTool {
 
     if (this.readOnly) {
       this.textarea.disabled = true;
+      this.textarea.hidden = true;
     } else {
       this.textarea.addEventListener('input', () => {
         this.onInput();
@@ -122,7 +123,11 @@ export default class RawTool {
     }
 
     wrapper.appendChild(this.textarea);
-
+    if (this.readOnly) {
+      const c = document.createElement('div');
+      c.innerHTML = this.data.html;
+      wrapper.appendChild(c);
+    }
     setTimeout(() => {
       this.resize();
     }, renderingTime);
